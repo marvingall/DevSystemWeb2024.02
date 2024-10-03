@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript">
+function mostraMensagem() {
+    var data = new Date(); 
+    var hora = data.getHours(); 
+    var saudacao;
+
+    if (hora < 12) {
+        saudacao = "Bom dia!";
+    } else if (hora >= 12 && hora < 18) {
+        saudacao = "Boa tarde!";
+    } else {
+        saudacao = "Boa noite!";
+    }
+
+    alert("Alo mundo! Agora são " + hora + " horas. " + saudacao);
+}
+</script>
+<title>Mostra uma mensagem</title>
+</head>
+<body>
+<form>
+<input type="button" value="Não aperte o botão" onclick="mostraMensagem()">
+</form>
+</body>
+</html>
